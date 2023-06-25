@@ -360,7 +360,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
 
   onTapHomeworkerContainer() {
     Get.toNamed(
-      AppRoutes.homeWorkerContainerScreen,
+      AppRoutes.homeWorkerContainer1Screen,
     );
   }
 

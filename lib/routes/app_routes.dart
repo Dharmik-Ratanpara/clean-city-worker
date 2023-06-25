@@ -6,8 +6,8 @@ import 'package:clean_city_worker/presentation/login_screen/login_screen.dart';
 import 'package:clean_city_worker/presentation/login_screen/binding/login_binding.dart';
 import 'package:clean_city_worker/presentation/otp_screen/otp_screen.dart';
 import 'package:clean_city_worker/presentation/otp_screen/binding/otp_binding.dart';
-import 'package:clean_city_worker/presentation/home_worker_container_screen/home_worker_container_screen.dart';
-import 'package:clean_city_worker/presentation/home_worker_container_screen/binding/home_worker_container_binding.dart';
+import 'package:clean_city_worker/presentation/home_worker_container1_screen/home_worker_container1_screen.dart';
+import 'package:clean_city_worker/presentation/home_worker_container1_screen/binding/home_worker_container1_binding.dart';
 import 'package:clean_city_worker/presentation/change_number_screen/change_number_screen.dart';
 import 'package:clean_city_worker/presentation/change_number_screen/binding/change_number_binding.dart';
 import 'package:clean_city_worker/presentation/app_navigation_screen/app_navigation_screen.dart';
@@ -23,10 +23,10 @@ class AppRoutes {
 
   static const String otpScreen = '/otp_screen';
 
-  static const String homeWorkerPage = '/home_worker_page';
+  static const String homeWorkerContainerPage = '/home_worker_container_page';
 
-  static const String homeWorkerContainerScreen =
-      '/home_worker_container_screen';
+  static const String homeWorkerContainer1Screen =
+      '/home_worker_container1_screen';
 
   static const String profilePage = '/profile_page';
 
@@ -70,10 +70,10 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: homeWorkerContainerScreen,
-      page: () => HomeWorkerContainerScreen(),
+      name: homeWorkerContainer1Screen,
+      page: () => HomeWorkerContainer1Screen(),
       bindings: [
-        HomeWorkerContainerBinding(),
+        HomeWorkerContainer1Binding(),
       ],
     ),
     GetPage(

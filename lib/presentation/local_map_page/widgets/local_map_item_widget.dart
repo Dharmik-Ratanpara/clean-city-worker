@@ -1,7 +1,5 @@
 import '../controller/local_map_controller.dart';
-import '../models/gridlocation_item_model.dart';
 import '../models/local_map_item_model.dart';
-import '../widgets/gridlocation_item_widget.dart';
 import 'package:clean_city_worker/core/app_export.dart';
 import 'package:flutter/material.dart';
 
@@ -15,31 +13,49 @@ class LocalMapItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Obx(
-      () => GridView.builder(
-        shrinkWrap: true,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          mainAxisExtent: getVerticalSize(
-            61,
-          ),
-          crossAxisCount: 2,
-          mainAxisSpacing: getHorizontalSize(
-            100,
-          ),
-          crossAxisSpacing: getHorizontalSize(
-            100,
-          ),
+    return Align(
+      alignment: Alignment.centerRight,
+      child: Container(
+        height: getSize(
+          60,
         ),
-        physics: NeverScrollableScrollPhysics(),
+        width: getSize(
+          60,
+        ),
+        child: Stack(
+          alignment: Alignment.topCenter,
+          children: [
+            CustomImageView(
+              imagePath: ImageConstant.imgLocation60x60,
+              height: getSize(
+                60,
+              ),
+              width: getSize(
+                60,
+              ),
+              alignment: Alignment.center,
+            ),
+            CustomImageView(
+              imagePath: ImageConstant.imgEllipse7,
+              height: getSize(
+                40,
+              ),
+              width: getSize(
+                40,
+              ),
+              radius: BorderRadius.circular(
+                getHorizontalSize(
+                  20,
+                ),
+              ),
+              alignment: Alignment.topCenter,
+              margin: getMargin(
+                top: 6,
+              ),
+            ),
+          ],
+        ),
       ),
-      itemCount: localMapItemModelObj.gridlocationItemList.length,
-      itemBuilder: (context, index) {
-        GridlocationItemModel model =
-            localMapItemModelObj.gridlocationItemList[index];
-        return GridlocationItemWidget(
-          model,
-        );
-      },
     );
   }
 }

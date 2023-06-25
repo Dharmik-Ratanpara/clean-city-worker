@@ -20,15 +20,6 @@ class AppStyle {
     fontWeight: FontWeight.w700,
   );
 
-  static TextStyle txtUrbanistRomanBold23 = TextStyle(
-    color: ColorConstant.gray900,
-    fontSize: getFontSize(
-      23,
-    ),
-    fontFamily: 'Urbanist',
-    fontWeight: FontWeight.w700,
-  );
-
   static TextStyle txtUrbanistRomanBold20 = TextStyle(
     color: ColorConstant.whiteA700,
     fontSize: getFontSize(

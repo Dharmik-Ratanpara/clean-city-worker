@@ -6,6 +6,8 @@ class HistoryWorkerController extends GetxController {
 
   Rx<HistoryWorkerModel> historyWorkerModelObj;
 
+  SelectionPopupModel? selectedDropDownValue;
+
   @override
   void onReady() {
     super.onReady();
@@ -14,5 +16,16 @@ class HistoryWorkerController extends GetxController {
   @override
   void onClose() {
     super.onClose();
+  }
+
+  onSelected(dynamic value) {
+    selectedDropDownValue = value as SelectionPopupModel;
+    historyWorkerModelObj.value.dropdownItemList.value.forEach((element) {
+      element.isSelected = false;
+      if (element.id == value.id) {
+        element.isSelected = true;
+      }
+    });
+    historyWorkerModelObj.value.dropdownItemList.refresh();
   }
 }

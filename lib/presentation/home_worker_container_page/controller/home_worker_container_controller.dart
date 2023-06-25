@@ -1,9 +1,9 @@
 import 'package:clean_city_worker/core/app_export.dart';
-import 'package:clean_city_worker/presentation/home_worker_page/models/home_worker_model.dart';
+import 'package:clean_city_worker/presentation/home_worker_container_page/models/home_worker_container_model.dart';
 import 'package:flutter/material.dart';
 
-class HomeWorkerController extends GetxController {
-  HomeWorkerController(this.homeWorkerModelObj);
+class HomeWorkerContainerController extends GetxController {
+  HomeWorkerContainerController(this.homeWorkerContainerModelObj);
 
   TextEditingController searchController = TextEditingController();
 
@@ -11,7 +11,7 @@ class HomeWorkerController extends GetxController {
 
   TextEditingController markascompleteController1 = TextEditingController();
 
-  Rx<HomeWorkerModel> homeWorkerModelObj;
+  Rx<HomeWorkerContainerModel> homeWorkerContainerModelObj;
 
   @override
   void onReady() {
