@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "734223310633",
+    "firebase_url": "https://clean-campus-78c4a-default-rtdb.firebaseio.com",
+    "project_id": "clean-campus-78c4a",
+    "storage_bucket": "clean-campus-78c4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734223310633:android:77782dc9da6f8b256de138",
+        "android_client_info": {
+          "package_name": "com.cleancity.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV-yESZnqkKBNCGlhGbeF8dAXCRupUNUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "734223310633-7ku6tji2srmsne3hp5fn1d3dh7s6j9m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cleancity.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734223310633:android:f71781049af3e0da6de138",
+        "android_client_info": {
+          "package_name": "com.cleancityworker.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV-yESZnqkKBNCGlhGbeF8dAXCRupUNUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "734223310633-7ku6tji2srmsne3hp5fn1d3dh7s6j9m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cleancity.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
